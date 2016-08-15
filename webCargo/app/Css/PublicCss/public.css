@@ -1,0 +1,21 @@
+/*-------------------------------------负责自定义公共样式----------------------------------*/
+/*数据行选中后的背景颜色*/
+.selectedTR{
+    background: #6fc2ee;
+}
+/*数据行触摸样式*/
+.tableData tbody tr:hover{
+    cursor: pointer;
+}
+.width100{
+    width: 100px;
+}
+.width150{
+    width: 150px;
+}
+.width200{
+    width: 200px;
+}
+.width250{
+    width: 250px;
+}

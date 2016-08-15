@@ -1,0 +1,35 @@
+<div class="selectDiv width50">
+    <div class="selectInput width50">
+        <input class="chooseText" unselectable="on" type="text" readonly="readonly" ms-duplex="pageSize" />
+        <span class="selectSign">▼</span>
+    </div>
+    <div class="selectLable width50">
+        <ul>
+            <li index="1">5</li>
+            <li index="1">10</li>
+            <li index="2">20</li>
+            <li index="3">25</li>
+            <li index="4">30</li>
+            <li index="5">35</li>
+            <li index="6">40</li>
+            <li index="7">45</li>
+            <li index="8">50</li>
+        </ul>
+    </div>
+</div>
+<!--回到首页-->
+<span class="backward fa fa-step-backward" ms-click="backwardPage()"></span>
+<!--前一页-->
+<span class="caret fa fa-caret-left" onclick="prePage()"></span>
+<span>第</span>
+<input type="text" class="currentPage" ms-duplex="currentPage" onkeyup="turnToPage(event)" />
+<span>页</span>
+<span>共</span>
+<span>{{dataPageLength}}</span>
+<span>页</span>
+<!--下一页-->
+<span class="caret fa fa-caret-right" onclick="nextPage()"></span>
+<!--回到尾页-->
+<span class="backward fa fa-step-forward" ms-click="forwardPage()"></span>
+<!--刷新-->
+<span class="refresh fa fa-refresh" onclick="refereshPage()"></span>

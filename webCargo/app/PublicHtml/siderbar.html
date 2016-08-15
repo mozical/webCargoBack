@@ -1,0 +1,179 @@
+<!--左侧导航栏-->
+
+<ul class="menuUL" id="menuUL" ms-controller="siderbar">
+    <li>
+        <div class="mainMenu" onclick="showChildUl(this)">
+            <span ms-class="fa fa-user"></span>
+            <span>账号管理</span>
+            <span ms-class="fa fa-caret-down"></span>
+        </div>
+        <ul class="childUL" ms-visible="childUL === 1">
+            <li ms-click="subMenuClick(1,11)" ms-class="subMenuSelected:subMenuSelected === 11">
+                <span ms-class="fa fa-users"></span>
+                <span>货源账户</span>
+            </li>
+            <li ms-click="subMenuClick(1,12)" ms-class="subMenuSelected:subMenuSelected === 12">
+                <span ms-class="fa fa-users"></span>
+                <span>司机账户</span>
+            </li>
+            <li  ms-click="subMenuClick(1,13)" ms-class="subMenuSelected:subMenuSelected === 13">
+                <span ms-class="fa fa-users"></span>
+                <span>车队管理</span>
+            </li>
+            <li  ms-click="subMenuClick(1,14)" ms-class="subMenuSelected:subMenuSelected === 14">
+                <span ms-class="fa fa-users"></span>
+                <span>调度管理</span>
+            </li>
+            <li  ms-click="subMenuClick(1,15)" ms-class="subMenuSelected:subMenuSelected === 15">
+                <span ms-class="fa fa-users"></span>
+                <span>车队司机管理</span>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <div class="mainMenu" onclick="showChildUl(this)">
+            <span ms-class="fa fa-file-o"></span>
+            <span>订单管理</span>
+            <span ms-class="fa fa-caret-down"></span>
+        </div>
+        <ul class="childUL" ms-visible="childUL === 2">
+            <li  ms-click="subMenuClick(2,21)" ms-class="subMenuSelected:subMenuSelected === 21">
+                <span ms-class="fa fa-users"></span>
+                <span>订单概况</span>
+            </li>
+            <li  ms-click="subMenuClick(2,22)" ms-class="subMenuSelected:subMenuSelected === 22">
+                <span ms-class="fa fa-users"></span>
+                <span>未完成订单</span>
+            </li>
+            <li  ms-click="subMenuClick(2,23)" ms-class="subMenuSelected:subMenuSelected === 23">
+                <span ms-class="fa fa-users"></span>
+                <span>已完成订单</span>
+            </li>
+            <li  ms-click="subMenuClick(2,24)" ms-class="subMenuSelected:subMenuSelected === 24">
+                <span ms-class="fa fa-users"></span>
+                <span>无人接单</span>
+            </li>
+            <li  ms-click="subMenuClick(2,25)" ms-class="subMenuSelected:subMenuSelected === 25">
+                <span ms-class="fa fa-users"></span>
+                <span>拿箱单统计</span>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <div class="mainMenu" onclick="showChildUl(this)">
+            <span ms-class="fa fa-phone"></span>
+            <span>信息通讯</span>
+            <span ms-class="fa fa-caret-down"></span>
+        </div>
+        <ul class="childUL" ms-visible="childUL === 3">
+            <li  ms-click="subMenuClick(3,31)" ms-class="subMenuSelected:subMenuSelected === 31">
+                <span ms-class="fa fa-users"></span>
+                <span>短信平台</span>
+            </li>
+            <li  ms-click="subMenuClick(3,32)" ms-class="subMenuSelected:subMenuSelected === 32">
+                <span ms-class="fa fa-users"></span>
+                <span>通讯录</span>
+            </li>
+            <li  ms-click="subMenuClick(3,33)" ms-class="subMenuSelected:subMenuSelected === 33">
+                <span ms-class="fa fa-users"></span>
+                <span>短信编写</span>
+            </li>
+            <li  ms-click="subMenuClick(3,34)" ms-class="subMenuSelected:subMenuSelected === 34">
+                <span ms-class="fa fa-users"></span>
+                <span>消息操作</span>
+            </li>
+            <li  ms-click="subMenuClick(3,35)" ms-class="subMenuSelected:subMenuSelected === 35">
+                <span ms-class="fa fa-users"></span>
+                <span>消息中心</span>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <div class="mainMenu" onclick="showChildUl(this)">
+            <span ms-class="fa fa-cny"></span>
+            <span>价格体系</span>
+            <span ms-class="fa fa-caret-down"></span>
+        </div>
+        <ul class="childUL" ms-visible="childUL === 4">
+            <li  ms-click="subMenuClick(4,41)" ms-class="subMenuSelected:subMenuSelected === 41">
+                <span ms-class="fa fa-users"></span>
+                <span>价格管理</span>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <div class="mainMenu" onclick="showChildUl(this)">
+            <span ms-class="fa fa-money"></span>
+            <span>财务管理</span>
+            <span ms-class="fa fa-caret-down"></span>
+        </div>
+        <ul class="childUL" ms-visible="childUL === 5">
+            <li  ms-click="subMenuClick(5,51)" ms-class="subMenuSelected:subMenuSelected === 51">
+                <span ms-class="fa fa-users"></span>
+                <span>卡哥财务</span>
+            </li>
+            <li  ms-click="subMenuClick(5,52)" ms-class="subMenuSelected:subMenuSelected === 52">
+                <span ms-class="fa fa-users"></span>
+                <span>司机财务</span>
+            </li>
+            <li  ms-click="subMenuClick(5,53)" ms-class="subMenuSelected:subMenuSelected === 53">
+                <span ms-class="fa fa-users"></span>
+                <span>充值提现</span>
+            </li>
+            <li  ms-click="subMenuClick(5,54)" ms-class="subMenuSelected:subMenuSelected === 54">
+                <span ms-class="fa fa-users"></span>
+                <span>司机工资</span>
+            </li>
+            <li  ms-click="subMenuClick(5,55)" ms-class="subMenuSelected:subMenuSelected === 55">
+                <span ms-class="fa fa-users"></span>
+                <span>订单财务统计</span>
+            </li>
+            <li  ms-click="subMenuClick(5,56)" ms-class="subMenuSelected:subMenuSelected === 56">
+                <span ms-class="fa fa-users"></span>
+                <span>保险统计</span>
+            </li>
+            <li  ms-click="subMenuClick(5,57)" ms-class="subMenuSelected:subMenuSelected === 57">
+                <span ms-class="fa fa-users"></span>
+                <span>货代金额汇总</span>
+            </li>
+            <li  ms-click="subMenuClick(5,58)" ms-class="subMenuSelected:subMenuSelected === 58">
+                <span ms-class="fa fa-users"></span>
+                <span>司机收支汇总</span>
+            </li>
+            <li  ms-click="subMenuClick(5,59)" ms-class="subMenuSelected:subMenuSelected === 59">
+                <span ms-class="fa fa-users"></span>
+                <span>司机账单</span>
+            </li>
+            <li  ms-click="subMenuClick(5,510)" ms-class="subMenuSelected:subMenuSelected === 510">
+                <span ms-class="fa fa-users"></span>
+                <span>车队财务汇总</span>
+            </li>
+            <li  ms-click="subMenuClick(5,511)" ms-class="subMenuSelected:subMenuSelected === 511">
+                <span ms-class="fa fa-users"></span>
+                <span>发票管理</span>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <div class="mainMenu" onclick="showChildUl(this)">
+            <span ms-class="fa fa-cog"></span>
+            <span>系统管理</span>
+            <span ms-class="fa fa-caret-down"></span>
+        </div>
+        <ul class="childUL" ms-visible="childUL === 6">
+            <li  ms-click="subMenuClick(6,61)">
+                <span ms-class="fa fa-users"></span>
+                <span>权限设置</span>
+            </li>
+            <li  ms-click="subMenuClick(6,62)">
+                <span ms-class="fa fa-users"></span>
+                <span>待付款有效时间</span>
+            </li>
+        </ul>
+    </li>
+</ul>

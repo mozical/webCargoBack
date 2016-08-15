@@ -1,0 +1,9 @@
+账户管理模块
+
+（1）supplyAccount货源账户
+（2）driverAccount司机账户
+（3）companyAccount公司账户
+（4）fleetManagement车队管理
+（5）schedulingManagement调度管理
+（6）fleetDriverManagement车队司机管理
+
