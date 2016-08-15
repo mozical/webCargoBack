@@ -1,0 +1,300 @@
+/*---------------------------负责框架样式-----------------------------------*/
+
+/*-----------------------------------头部样式----------------------------------------*/
+.topBanner{
+    height: 90px;
+    padding: 0px 30px;
+    background: #eceef3;
+}
+.logo{
+    float: left;
+    height: 100%;
+}
+.nav{
+    float: right;
+    height: 100%;
+    line-height: 90px;
+    font-size: 0px;
+}
+.textblue{
+    color: #24abe3;
+}
+.nav>span{
+    font-size: 12px;
+}
+.navSpace{
+    margin-right: 15px;
+}
+
+
+
+/*-----------------------------------内容框架布局-----------------------------------*/
+.bodyContent{
+    padding: 0px 30px;
+    display: flex;
+    justify-content:flex-start;
+}
+.leftMenu{
+    width: 200px;
+}
+.rightContent{
+    width:calc(100% - 240px);
+    padding: 0px 20px;
+    min-height: 800px;
+}
+
+
+/*-----------------------------------左侧导航样式-----------------------------------*/
+.menuUL{
+    width: 100%;
+}
+.menuUL>li{
+    width: 100%;
+    cursor: pointer;
+}
+.mainMenu{
+    line-height: 50px;
+    background: #6fc2ee;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.mainMenu>span:nth-child(1),.mainMenu>span:nth-child(3){
+    color:#fff;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    line-height: 50px;
+}
+.mainMenu>span:nth-child(1){
+    left: 30px;
+}
+.mainMenu>span:nth-child(3){
+    right: 30px;
+}
+.childUL{
+    background: #fff;
+    /*display: none;*/
+}
+.childUL>li{
+    background: #fafafa;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    color: #333;
+    font-size: 0px;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+.childUL>li:hover{
+    background: #96e4fa;
+    color:#fff;
+}
+.childUL>li>span{
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.childUL>li>span:nth-child(1){
+    width: 30%;
+    text-align: center;
+}
+.childUL>li>span:nth-child(2){
+    width: 70%;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.childUL .subMenuSelected{
+    background: #96e4fa;
+}
+
+
+/*-----------------------------------右侧内容样式-----------------------------------*/
+
+/*-------------------------------查询条件样式----------------------------------*/
+.searchLine{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.searchIf{
+    margin: 10px;
+    min-width: 300px;
+}
+.searchName{
+    min-width: 100px;
+    display: inline-block;
+}
+.searchNav input{
+    width: 150px;
+    height: 20px;
+    line-height: 20x;
+    text-indent: 10px;
+    border-radius: 5px;
+    outline: 0px;
+    border: 1px solid #ccc;
+}
+.two_btn{
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    background: #8cc952;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.two_btn:hover{
+    background: #048b4a;
+}
+
+/*-------------------------------------表格数据部分样式------------------------*/
+.tablePart{
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+}
+.tableIntr{
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    color: darkblue;
+    text-indent: 20px;
+}
+.tableTitle{
+    height: 50px;
+    background: #e9e8e8;
+}
+.tableTitle li{
+    float: left;
+    color: #333;
+    height: 47px;
+    line-height: 47px;
+    width: 100px;
+    text-align: center;
+    background: #eaeaea;
+    box-shadow: 0px 4px 3px #999;
+}
+.tableTitle li:hover{
+    cursor: pointer;
+    background: #84d2ff;
+    color:#fff;
+}
+.tableData{
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+.tableData table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+}
+.tableData th{
+    border: 1px solid #ccc;
+    line-height: 30px;
+}
+.tableData td{
+    border: 1px solid #ccc;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/*----------------------------------分页样式-----------------------------------------*/
+/*-------------------------------------自定义下拉框样式------------------------*/
+.selectDiv{
+    display: inline-block;
+    position: relative;
+}
+.selectInput,.selectLable,.selectDiv{
+    width: 150px;
+}
+.selectInput:hover,.selectInput input:hover,.selectLable li:hover{
+    cursor: pointer;
+}
+.selectDiv .span{
+    position: relative;
+    text-align: left;
+    text-indent: 5px;
+}
+.selectSign{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+}
+.selectLable{
+    position: absolute;
+    background: #ffffff;
+    z-index: 9;
+    border-left: 1px solid #dae0e9;
+    border-right: 1px solid #dae0e9;
+    display: none;
+}
+.selectLable li{
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #dae0e9;
+    text-align: left;
+    text-indent: 10px;
+}
+.selectLable li:hover{
+    background: #ebeff3;
+}
+
+
+/*-----------------------------------------分页样式-----------------------------------*/
+.pageSplite{
+    background: #eaeaea;
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.chooseText{
+    text-align: left;
+    text-indent: 10px;
+}
+.currentPage{
+    width: 35px;
+    text-align: center;
+}
+.selectInput.width50,.selectDiv.width50,.selectLable.width50{
+    width: 50px;
+}
+.chooseText{
+    width: 100%;
+}
+
+li.selectedSubMenu{
+    background: #96e4fa;
+}
+.backward{
+    margin: 0px 10px;
+    color: #6fc2ee;
+    cursor: pointer;
+    vertical-align: middle;
+}
+span.caret{
+    margin: 0px 5px;
+    font-size: 20px;
+    color: #6fc2ee;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.refresh{
+    color: #6fc2ee;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.backward:hover,.caret:hover,.refresh:hover{
+    color: #00a8ff;
+    font-size: 24px;
+}

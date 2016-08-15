@@ -1,0 +1,45 @@
+/*-------------------------------------负责初始化浏览器设置---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+img {
+    width: 100%;
+    display: inline-block;
+    border-style: none;
+    vertical-align: middle;
+}
+input{
+    outline: none;
+}
+body{
+    font-family:"Microsoft YaHei";
+    font-size: 14px;
+}
+body,p,ol,ul,li,dl,dt,dd{
+    margin:0px;
+    padding:0px;
+    list-style: none;	
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+/*清浮动*/
+.clear {
+    clear: both;
+}
+.ellipsis{
+    display: block;
+    text-overflow: ellipsis; /* for IE */  
+    -moz-text-overflow: ellipsis; /* for Firefox,mozilla */  
+    overflow: hidden;  
+    white-space: nowrap;
+}
+.pointer{
+    cursor: pointer;
+}
